@@ -1,5 +1,5 @@
 # ---> Convert csv to html table <--- #
-def convert_to_html(txt, num):
+def convert_to_html(txt, num=-1):
     """
     Convert a line of a csv file to a line of an html table
     :param txt: a String containing a line from a csv file
@@ -16,13 +16,13 @@ def convert_to_html(txt, num):
         tag = '<td>'
         end_tag = '</td>'
 
+    # put content of txt between html tags
     while ',' in txt:
         com_pos = txt.index(',')
         segment = txt[:com_pos]
         this_line += tag + segment + end_tag
         txt = txt[com_pos + 1:]
-    this_line += tag + txt.strip() + end_tag
-    this_line += '</tr>'
+    this_line += tag + txt.strip() + end_tag + '</tr>'
 
     return this_line
 
