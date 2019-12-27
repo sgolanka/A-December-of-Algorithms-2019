@@ -24,6 +24,23 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
   - [**December 9 - One to One?**](#december-9---one-to-one)
   - [**December 10 - Count The Cookies**](#december-10---count-the-cookies)
+  - [**December 11 - Is This A Valid Email Address**](#december-11---is-this-a-valid-email-address)
+  - [**December 12 - Show JaSON the way**](#december-12---show-jason-the-way)
+  - [**December 13 - Toggling Switches**](#december-13---toggling-switches)
+  - [**December 14 - A Wordplay with Vowels and Consonants**](#december-14---a-wordplay-with-vowels-and-consonants)
+  - [**December 15 - Intruder Alert**](#december-15---intruder-alert)
+  - [**December 16 - Casino Royale**](#december-16---casino-royale)
+  - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
+  - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
+  - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
+  - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
+  - [**December 21 - Marching Partners**](#december-21---marching-partners)
+  - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
+  - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
+  - [**December 24 - Find the list**](#december-24---find-the-list)
+  - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
+  - [**December 26 - Build The Tower**](#december-26---build-the-tower)
+  - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**FAQ**](#faq)
 
 
@@ -36,7 +53,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A "sevenish" number is a natural number which is either a power of 7, or the sum of unique powers of 7
     - The first 5 sevenish numbers are: `1`, `7`, `8`, `49`, `50`.
     - Now, implement an algorithm to find the `n`th sevenish number.
-  - **Example**
+  - **Sample Input/Output**
       ```bash
       > sevenish_number(1)
         1
@@ -66,7 +83,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         * Sum the partial sums of the even digits to form s2
     - If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.  
     </br>
-    
+ - **Sample Input/Output**
     ```
     Reverse the digits:
     61789372994
@@ -102,7 +119,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - **Decide for yourself:** What would Thanos do if the universe carried an odd amount of living things?
  ![hello](/src/assets/thanos-snap.gif)
     - The list is sorted if no elements are smaller than any previous item. Duplicates may exist in the input and may exist in the output.
-  - **Example**
+  - **Sample Input/Output**
       ```c
       // A sorted list remains sorted
       [1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]
@@ -125,7 +142,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - For example, suppose `N = 5`, and the respective citations of each paper are `[4, 3, 0, 1, 5]`
     - Then the h-index would be `3`, since the researcher has 3 papers with at least 3 citations.
     - Given a list of paper citations of Dr. Bruce Banner, calculate his h-index.
-  - **Example**
+  - **Sample Input/Output**
       ```bash
       > h_index(5, [4,3,0,1,5])
         3
@@ -143,7 +160,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. A CSV file stores tabular data in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. 
     - Data in a CSV file is not very easy to understand. Your task is to read data from a CSV file and convert into a code for a HTML table and store it another file with a .html extension. Use the CSV file given in the resources to build your algorithm. 
-  - **Example**
+  - **Sample Input/Output**
       - **CSV**
         ```csv
         column1,column2,column3
@@ -181,7 +198,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
        - For example, suppose `N = 3`
     - Then the series will have 3 Fibonacci prime numbers : 2,3,5
     - Given the count of prime numbers needed by Henry , compute the series for him.
-  - **Example**
+  - **Sample Input/Output**
       ```
         Enter the value for (n): 5
         
@@ -201,7 +218,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	- A medical clinic assigns a token number to every patient who visits. The token number starts from 1 and it is given based on the order of arrival, to the `n` patients who arrive. But, the receptionist accepts bribe and lets a person `k` in first. The task is to print the token number and the patient's name in the order in which they see the doctor.
  	- Implement the concept of Queues to solve this problem
 	- <img src="https://media.giphy.com/media/6kyrz1j5uhJdK/giphy.gif" height=250/>
-- **Example**
+- **Sample Input/Output**
 ```
 	Enter N: 5
 	Enter (token no, id):
@@ -225,12 +242,12 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ### **December 8 - Cheating Probability**
   - **Problem**
-    - Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
-    	-  In front = 0.3
-    	-  Behind = 0.2
-    	-  Sides = 0.2
-    	-  Diagonal = 0.1
-  - **Example**
+    - Given an RxC Matrix in which each element represents the Department of a student seated in that row and column in an examination hall, write a code to calculate the probability of each student copying if a person from the same department sits:
+    	-  In front of him = 0.3
+    	-  Behind him = 0.2
+    	-  To his left or right = 0.2
+    	-  In any of his 4 closest diagonals = 0.025
+  - **Sample Input/Output**
     - **Input**
        ``` 
         CSE ECE CSE 
@@ -238,8 +255,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         ```
     - **Output**
         ```
-        0.0 0.3 0.2
-        0.3 0.5 0.3
+        0.0 0.225 0.2
+        0.225 0.5 0.3
         ```
     - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
   - **Resources**
@@ -254,7 +271,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
     - Let there be a function `f`: `X->Y` such that  if a,b belong to `X` and if `f(a)=f(b)` then `a=b`. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
     - Your task is to write a program that accepts two sets of numbers and the relationship between them and evaluate if they are indeed a one-one function.
-  - **Example**
+  - **Sample Input/Output**
       ```
       Set 1: {1,2,3,4}
       Set 2: {1,4,9,16}
@@ -285,7 +302,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The integers `n`, `p` and `c` represent money to spend, cost of a cookie, and the number of cookie jars he can turn in for a free cookie respectively.
     - Implement a function `cookieCount(n, p, c)` to count the number of cookies Alex could buy.
    
-  - **Example**
+  - **Sample Input/Output**
     ```bash
     > cookieCount(10, 2, 5)
       6
@@ -297,7 +314,460 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Div Mod in C & C++](https://www.cprogramming.com/tutorial/modulus.html)
     - [Div Mod in Java](http://www.cs.ukzn.ac.za/~hughm/java/intro/week2/21.html)
     
+
+### **December 11 - Is This A Valid Email Address**
+  - **Problem**
+    - While signing up for a website, you must have seen that when an invalid email address is entered, you get a warning. This is because the website validates the given email address according to some specification of a valid email address (check the resources section to know the format of a valid email address). 
+    - Now, for today's challenge implement your own email address verification algorithm.
+    - For the sake of simplicity, assume that a valid email address has the following format:
+      - `local_part@domain`
+      - The `local_part` should contain only alphabets, numbers and the characters: `_`, `.`, `-`.
+      - The `domain` should contain only alphabets followed by `.com`
+  - **Example**
+      ```
+      // Valid email addresses
+      john-doe31@gmail.com
+      jane.austen_691@dnarifle.com
+      ```
+  - **Optional Problem**
+    - Implement an algorithm to verify an email address based on the complete syntax specification (given in the resources section).
+  - **Resources**
+    - [Complete Syntax Specification of Email Addresses](https://en.wikipedia.org/wiki/Email_address#Syntax)
+  - <details><summary><b>Still stuck?</b></summary>
+      <ul>
+          <li>Use Regular Expressions to verify the format of the email.</li>
+          <li><a href="http://www.cplusplus.com/reference/regex/">Regular Expressions in C++</a></li>
+          <li><a href="https://www.tutorialspoint.com/python/python_reg_expressions.htm">Regular Expressions in Python</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions in JavaScript</a></li>
+          <li><a href="https://www.javatpoint.com/java-regex">Regular Expressions in Java</a></li>
+      </ul>
+    </details>
+
+
+### **December 12 - Show JaSON the way**
+  - **Problem** 
+  	- Jason is stranded in a desert.His phone's battery is going to die out and all he has left is a compass.
+    - Parse the JaSON.json(in src/res) file and get the latitude and longitude values of the current and destination location.
+    - Also find the distance between those two locations (refer resources for the link)
+    - Return a Directions json file with your personalized message, distance and some direction.
+  - **Sample Input/Output**
+       - **JaSON.json(src/res):**
+       ```json
+       {
+  		"markers": 
+		[
+			{
+				"name": "start",
+				"location": [25.1212, 55.1535],
+			},
+			{
+				"name": "destination",
+				"location": [25.2285, 55.3273]
+			}
+  		]
+       }
+       ```
+       - **Sampl- Inpute Output:**
+       ```json
+       {
+        "directions": 
+		[
+			  {
+			    "message": "Meet at the destination point",
+			    "distance": 21.17,
+			    "direction": "N"
+			  }
+        ]
+       }
+       ```
+  - **Resources**
+    - [Java JSON parsing](https://www.mkyong.com/java/json-simple-example-read-and-write-json/)
+    - [Python JSON parsing](https://docs.python.org/3/library/json.html)
+    - [C++ JSON parsing](https://nlohmann.github.io/json/)
+    - [Calculate distance](https://stackoverflow.com/questions/365826/calculate-distance-between-2-gps-coordinates)
+  - **Note**  
+    JSON format can differ and values like message and direction are totally upto you.
+
+
+### **December 13 - Toggling Switches**
+  - **Problem**  
+    - There are `n` switches labeled from 1 to `n`,to turn on/off `n` bulbs.
+    - At start all the bulbs are switched off
+    - At first round, every bulb is turned `on`
+    - At second round, every second switch is turned `off`
+    - At third round, every third switch is toggled on/off (on->off and off->on)
+    - This goes on and during nth round, every nth switch is toggled on/off.
+    - The task is to write `O(n)` and constant time functions to find how many switches are in the `on` state (two separate functions).
+    - [optional] Find the switch nos. that are in the 'on' state after n such iterations.
+
+  - **Sample Input/Output**
+  ```
+  Enter no of switches: 5
+       
+  Iteration 0: 1->off  2->off  3->off  4->off  5->off
+  Iteration 1: 1->on   2->on   3->on   4->on   5->on
+  Iteration 2: 1->on   2->off  3->on   4->off  5->on
+  Iteration 3: 1->on   2->off  3->off  4->off  5->on
+  Iteration 4: 1->on   2->off  3->off  4->on   5->on
+  Iteration 5: 1->on   2->off  3->off  4->on   5->off
+  
+  No of switches in the 'on' state at the end: 2
+  ```
+  - **Resources**
+    - [Java math module](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html)
+    - [Python math module](https://docs.python.org/3/library/math.html)
+    - [C++ math module](http://www.cplusplus.com/reference/cmath/)
+
+
+### **December 14 - A Wordplay with Vowels and Consonants**
+  - **Problem**  
+    - There are two players A and B. Initially, they are given the same string ```s```. 
+    - They have to make substrings with letters in 's'.
+    - A makes substrings starting with a vowel(a,e,i,o,u) and B makes substrings starting with consonants.
+    - For each occurence of their substring in 's', the players get 1 point.
+    - The task is to find who has the maximum score and what's the winner's score for a string 's'.
+  - **Sample Input/Output**
+       ```
+       String: london
+       A's score:7 (o,on,ond,ondo,ondon)
+       B's score:14 (l,lo,lon,lond,londo,london,n,nd,ndo,ndon,d,do,don) 
+       The winner is B with 14 points
+       ```
+   - **Format**
+      ```
+      Enter string: monkey
+      The winner is B with 14 pts
+      ```
+  - **Resources**
+    - [String in c++](https://www.w3schools.com/cpp/cpp_strings.asp)
+    - [Strings in python](https://www.w3schools.com/python/python_strings.asp)
+    - [Strings in java](https://www.javatpoint.com/java-string)
+
+
+### **December 15 - Intruder Alert**
+  - **Problem**  
+    - Rick Sanchez just discovered that someone from another planet has been intruding into his private planet use its resources.
+    - In order to lure that person in to humiliate him, Rick decides to send a dish as a gift. This dish has been cooked with a balance between its main ingredients: Animal A and Liquid B.
+    - If for every 1g of A 1ml of B has to be added, write a code that uses **Backtracking** to print the number of ways the ingredients can be added when the quantity of A needed is provided.
+  - **Sample Input/Output**
+    ```
+    Quantity of A(in grams): 2
+    Combinations: [AABB, ABAB]
+    Quantity of A(in grams): 3
+    Combinations: [AAABBB, AABABB,AABBAB,ABAABB,ABABAB]
+    ```
+  - **Resources**
+    - [Backtracking](https://www.javatpoint.com/backtracking-introduction)
     
+
+### **December 16 - Casino Royale**
+  - **Problem**  
+    - In poker, players form sets of five playing cards, called hands, according to the rules of the game. Each hand has a rank, which is compared against the ranks of other hands of all those in the game and the highest hand wins all the money that everybody puts in.
+    - A poker hand is specified as a space separated list of five playing cards:
+    - Each input card has two characters indicating face and suit. For example: `2d` (two of diamonds).
+    	- Faces are: `a`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `j`, `q`, `k`
+		- Suits are: `h` :hearts: (hearts), `d` :diamonds: (diamonds), `c` :clubs: (clubs), and `s` :spades: (spades)
+    - Create a program to parse a single five card poker hand and specify the poker hand ranking and produce one of the following outputs.
+    ```
+     straight-flush
+	 four-of-a-kind
+	 full-house
+	 flush
+	 straight
+	 three-of-a-kind
+	 two-pair
+	 one-pair
+	 high-card
+	 invalid
+    ```
+  - **Sample Input/Output**
+    ```
+     2h  2h  2h  kc  qd:  three-of-a-kind
+     2h  5h  7d  8c  9s:  high-card
+     ah  2d  3c  4c  5d:  straight
+     2h  3h  2d  3c  3d:  full-house
+     2h  7h  2d  3c  3d:  two-pair
+     2h  7h  7d  7c  7s:  four-of-a-kind 
+     10h jh  qh  kh  ah:  straight-flush
+     4h  4s  ks  5d  10s: one-pair
+     qc  10c 7c  6c  4c:  flush
+    ```
+  	<img src="/src/assets/casino.gif" height=250/>
+  - **Resources**
+    - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
+    - [Arrays](https://makecode.microbit.org/types/array)
+    - [Sorting](https://www.geeksforgeeks.org/sorting-algorithms)
+    
+    
+### **December 17 - Subway Surfer**
+  - **Problem**
+    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.   
+    
+    	<img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
+    - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
+    - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
+    - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
+  - **Sample Input/Output**
+      ```
+      Enter Train Lines, Start and Endpoint:
+      Line 1: Park, Central, Beach, Mylapore, Kilpauk
+      Line 2: Central, T.Nagar, Washerampet, MKB Nagar.
+      Start: Park
+      End: T.Nagar
+      ```
+      ```
+      Fastest Path: Park ->Central -> T.nagar
+      ```
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+    
+    
+### **December 18 - Your Password is too WEAK**
+  - **Problem**
+    - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
+    - The problem is to calculate the time taken to find the password given that you know the length of the password string using Brute Force and Multithreading. 
+    **Note:** Brute Forcing doesn't work in real life.
+  - **Sample Input/Output**
+  ```
+  Enter Password: T!Kk@
+  Time Taken: 6723.45 seconds
+  ```
+  - **Resources**
+    - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
+    - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
+    
+    
+### **December 19 - Periphery of a lake**
+  - **Problem**
+    - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
+    - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
+    	<img src="/src/assets/Convexhull.jpg" height=250/> 
+    - Develop an algorithm to help Reshwin
+  - **Sample Input/Output**
+  ```
+  {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
+  ```
+  ```
+  The outer limits are - {{0, 3}, {0, 0}, {3, 0}, {3, 3}}
+  ```
+  - **Resources**
+    - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
+    
+    
+### **December 20 - 100 days of summer**
+  - **Problem**
+    - Nitya wants to visit a number of cities in her summer vacation.
+    -  Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
+    	<img src="/src/assets/tsp.jpg" height=250/> 
+    -  The input is in the form of a matrix where the indices represent the city number and the value in the matrix represents the distance between the two cities
+    - The output is the least distance
+  - **Sample Input/Output**  
+ 	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
+ 	- Input
+ 	```
+		A	B	C	D
+	 A	0km	40km	10km	30km			
+	 B	40km	0km	20km	10km	
+	 C	10km	20km	0km	50km		
+	 D	30km	10km	50km	0km
+  	```
+  	- Output 
+	```
+	The shortest distance is 70km
+	```
+  - **Resources**
+    - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
+  
+  
+### **December 21 - Marching Partners**
+  - **Problem**
+    - Nikhil wants to organise a procession with his students.
+    - In this procession, two students will walk side-by-side in each row.
+    - Nikhil expects that the height difference of the two students who walk in each row should not exceed a certain threshold. That is, two students can be paired as long as their height difference does not exceed `d`.
+    - If there are `n` students in the class in which the `i`th student is `H[i]` units tall, pair the maximum number of students corresponding to the above condition.
+    - _Note_: A student cannot be part of more than one pair.
+    - Implement a function `marching_partners(n, H, d)` that prints the maximum number of pairs that can be formed. 
+  - **Sample Input/Output**  
+ 	```bash
+	> marching_partners(5, [147,149,149,155,150], 2)
+	  2
+  	```	
+  - **Explanation**
+    - The 5 students have heights 147, 149, 149, 155 and 150 respectively. The maximum allowed difference in the heights of two students forming a pair is at most 2. It is clear that the 4th student (height 155) cannot be paired with any other student. The remaining 4 students can be paired as (1st and 3rd) and (2nd and 5th) to form 2 pairs.
+  - **Resources**
+    - [Greedy Algorithms](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)
+    
+    
+### **December 22 - Alternating Balls**
+  - **Problem**
+    - There are `N` balls arranged in a row. They are either red or blue in colour.
+    - A sub-row is said to be alternating if any two adjacent balls are of different colours. 
+    - For each ball located at position `x` (from 1 to `N`), compute the length of the longest alternating sub-row that starts at `x`. 
+    - Implement a function `alt_balls(N,arr)` that outputs the length of the longest alternating sub-row for each `x` from 1 to N.
+  - **Sample Input/Output** 
+   	```bash
+	> alt_balls(4, [B,B,B,B])
+	  1 1 1 1
+	> alt_balls(4, [B,R,B,R])
+	  4 3 2 1
+	> alt_balls(6, [B,B,B,R,B,B])
+	  1 1 3 2 1 1 
+ 	```	
+  - **Explanation**
+    - `Case 1`: No two balls have different colours, so any alternating sub-row may only consist of a single ball.
+    - `Case 2`: Every sub-row is alternating.
+    - `Case 3`: The only alternating sub-row of length 3 is from position 3 to 5.
+  - **Resources**
+    - [Dynamic Programming](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/)  	
+    
+    
+### **December 23 - Finding the centroid of a polygon**
+  - **Problem**
+    - Given a set of vertices, write a function to find the centroid of a closed polygon.
+    - Centroid of a polygon is its geometric centre.
+    - It can be determined by referencing the Shoelace Formula.
+  - **Sample Input/Output**
+      ```
+ 	Vertices={{3,4},{5,2},{6,7}}
+	Centroid={4.66,4.33}
+	
+	Vertices={{0,4},{0,0},{4,0},{4,4}}
+	Centroid={2,2}
+	
+	Vertices={{0,0},{0,40},{80,40},{80,90},{0,90},{0,120},{120,120}}
+	Centroid={66.9,65}
+      ```
+      ```
+      Case 1: 
+      Centroid is calculated using centroid of a triangle formula.
+      
+      Case 2:
+      Centroid for a square is point of intersection of its diagnols.
+      
+      Case 3:
+      Centroid is calculated for irregular polygons by calculating seperate summation of areas and 
+      dividing them for x and y coordinates.
+      ```
+    - **Resources**
+      - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
+      - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
+    
+    
+### **December 24 - Find the list**
+  - **Problem**
+  	- Reena has an algorithm which prints the three continuous elements of a circular doubly linked list.It begins with the first element or the head of the list and runs till infinity. 
+	- Say for example when the list is `89,67,33,44` the algorithm's output is `89,67,33,67,33,44,33,44,89,......`
+	- Given a part of the output of the algorithm ,help Reena to find the actual number of elements in the list and print the input list with respective elements.
+  - **Sample Input/Output** 
+  	- Input:
+		- Length of the list returned as output by the algorithm
+		- Elements returned by the algorithm
+		```
+		12
+		54 65 44 65 44 89 44 89 54 89
+		```
+	- Output:
+		- Length of the original list
+		- Elements of the original list
+		```
+		4
+		54 65 44 89
+		```
+  - **Resources**
+    - [Doubly linked list](https://www.geeksforgeeks.org/doubly-linked-list/)  
+    - [Circular linked list](https://www.geeksforgeeks.org/circular-linked-list/)
+    
+    
+ ### **December 25 - Naughty Jack** :christmas_tree:
+  - **Problem**
+  	- Ho Ho oh no! It's Christmas today but Santa and his logistics support team have encountered problems in making their deliveries. 
+	- Jack, a member of Santa's notorious naughty list has decided to hack into the North Pole's servers and deleted some data to interfere with delivery operations. Luckily, the elves know their way around Server Storages.
+	- Help the Elves to restore the data erased by Jack. Luckily the data has been stored in compliance with the principles of **RAID**. Create an algorithm that would restore Santa's data and resume operations at the north pole.
+	- Missing bits are denoted by `*`, parity bits(even parity) are followed by a `P`
+  - **Sample Input/Output** 
+	-  ```
+		             DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        *        0       1P
+		                1        0        0        0P      *
+		                1        1        0P       *       1
+		                *        1P       0        1       0
+		                1P       0        0        0       *
+		   
+	     After data restoration: 
+	     
+	                 DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        0        0       1P
+		                1        0        0        0P      1
+		                1        1        0P       1       1
+		                0        1P       0        1       0
+		                1P       0        0        0       1  
+	```     
+  <img src="https://media.giphy.com/media/GkX4gNIUW2jni/giphy.gif" height=250/>
+  
+  - **Resources**
+    - [Raid Storage](https://en.wikipedia.org/wiki/RAID)  
+    - [Parity Bits](https://www.computerhope.com/jargon/p/paritybi.htm)
+  
+  
+ ### **December 26 - Build The Tower** 
+  - **Problem**
+  	- Mento Constructions has planned to build a tower with `n` compartments, where height of i-th compartment is given by `hArr[i]`
+	- The tower will be made on a consecutive section of the compartments.
+	- The height starts from 1 and increase by exactly 1 each time till some height and then decrease by exactly 1 each time to height 1. Also, heights of all the compartments other than of the tower should have zero height, so that the tower is visible to people.
+	- You want to construct a tower. For that, you can reduce the heights of some of the compartments. In a single operation, you can reduce the height of a compartment by 1 unit.
+	- Create a function `buildTower(n,hArr)` that prints the minimum number of operations required to build a tower. Here `n` represents the number of compartments and `hArr` represents the array of heights.
+  - **Sample Input/Output** 
+  	```bash
+	> buildTower(3,[1, 2, 1])
+	  0
+	> buildTower(4,[1, 1, 2, 1])
+	  1
+	> buildTower(5,[1, 2, 6, 2, 1])
+	  3
+ 	```	
+  - **Explanation**
+    - `Case 1`: A tower is already present. So, there is no need to make any operation.
+    - `Case 2`:  If you reduce the height of the first compartment to 0. You get 0 1 2 1. The blocks 1, 2, 1 form a tower. So, the answer is 1.
+    - `Case 3`:  One possible tower can be 1 2 3 2 1. It requires 3 operations to build. 
+  - **Resources**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
+        
+### **December 27 - Spiralling**
+  - **Problem**
+  	- In CVV Students were made to stand in the auditorium for the morning assembly.
+	- They are standing in an order such that the number of rows and columns might not be equal.
+	- Towards the end, students are ordered to disperse in a spiral manner.(Clockwise)
+	- Develop an algorithm to traverse the matrix of students in the spiral manner.
+  - **Sample Input/Output**
+  	- Input:
+	  ``` 	
+	   1    2   3   4
+	   5    6   7   8
+	   9   10  11  12
+	   13  14  15  16
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+		```
+  - **NOTE**
+  	-The Algorithm should work for any number of rows and columns.
+	- Input:
+	  ``` 	
+	   1    2   3   4   5   6
+	   7    8   9   10  11  12
+	   13   14  15  16  17  18  
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
+		```
+   - **Resources**
+     - [Matrix](https://www.geeksforgeeks.org/matrix/)
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
@@ -307,6 +777,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
+- [Humaidabdullah](https://github.com/Humaidabdullah)
+- [Vignesh040](https://github.com/Vignesh0404)
+
 
 
 FAQ:
