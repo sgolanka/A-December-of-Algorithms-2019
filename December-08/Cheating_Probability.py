@@ -17,6 +17,12 @@ Set of probabilities based on location:
 
 
 def cheating_matrix(seating_chart):
+    """
+    Calculate and return the probabilities of cheating for each position in a rxc grid
+    :param seating_chart: A nested list representing a rxc grid
+    :return: A nested list, the same size as seating_chart, with each element representing that
+            position's cheating probability
+    """
 
     # Create matrix of probabilities by location
     prob_matrix = [[.025, .3, .025],
